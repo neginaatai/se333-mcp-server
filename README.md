@@ -203,3 +203,23 @@ src/test/java/org/springframework/samples/petclinic/owner/
 - **Maven** — Build and test runner
 - **GitHub Copilot (GPT)** — AI agent
 - **Model Context Protocol (MCP)** — Agent-tool communication protocol
+
+## Troubleshooting
+
+**Port 8000 already in use**
+```bash
+lsof -ti:8000 | xargs kill -9
+python main.py
+```
+
+**parse_jacoco fails**
+Run `./mvnw package` first to generate the JaCoCo report before calling the tool.
+
+**GPT ignores MCP tools**
+Make sure the server is running and the tool is listed in the `tools` array in `tester.prompt.md`.
+
+**Maven build fails on formatting**
+Run the formatter first:
+```bash
+mvn io.spring.javaformat:spring-javaformat-maven-plugin:apply
+```
