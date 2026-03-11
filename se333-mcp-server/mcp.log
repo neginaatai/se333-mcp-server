@@ -1,0 +1,101 @@
+
+
+╭───────────────────────────────────────────╮
+│                                           │
+│                                           │
+│       ▄▀▀ ▄▀█ █▀▀ ▀█▀ █▀▄▀█ █▀▀ █▀█       │
+│       █▀  █▀█ ▄▄█  █  █ ▀ █ █▄▄ █▀▀       │
+│                                           │
+│                                           │
+│               FastMCP 3.1.0               │
+│           https://gofastmcp.com           │
+│                                           │
+│    🖥  Server:      SE333, 3.1.0           │
+│    🚀 Deploy free: https://fastmcp.cl…    │
+│                                           │
+╰───────────────────────────────────────────╯
+
+
+[03/05/26         INFO     S transport.py:273
+01:11:11]                  t                 
+                           a                 
+                           r                 
+                           t                 
+                           i                 
+                           n                 
+                           g                 
+                                             
+                           M                 
+                           C                 
+                           P                 
+                                             
+                           s                 
+                           e                 
+                           r                 
+                           v                 
+                           e                 
+                           r                 
+                                             
+                           '                 
+                           S                 
+                           E                 
+                           3                 
+                           3                 
+                           3                 
+                           '                 
+                                             
+                           w                 
+                           i                 
+                           t                 
+                           h                 
+                                             
+                           t                 
+                           r                 
+                           a                 
+                           n                 
+                           s                 
+                           p                 
+                           o                 
+                           r                 
+                           t                 
+                                             
+                           '                 
+                           s                 
+                           s                 
+                           e                 
+                           '                 
+                                             
+                           o                 
+                           n                 
+                                             
+                           h                 
+                           t                 
+                           t                 
+                           p                 
+                           :                 
+                           /                 
+                           /                 
+                           1                 
+                           2                 
+                           7                 
+                           .                 
+                           0                 
+                           .                 
+                           0                 
+                           .                 
+                           1                 
+                           :                 
+                           8                 
+                           0                 
+                           0                 
+                           0                 
+                           /                 
+                           s                 
+                           s                 
+                           e                 
+INFO:     Started server process [77111]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+INFO:     Uvicorn running on http://127.0.0.1:8000 (Press CTRL+C to quit)
+INFO:     127.0.0.1:62695 - "GET / HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:62695 - "GET /favicon.ico HTTP/1.1" 404 Not Found
