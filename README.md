@@ -163,6 +163,7 @@ The `detect_flaky_tests` MCP tool extends the agent beyond coverage improvement 
 4. Flags any test with inconsistent results as flaky
 5. Diagnoses likely cause (timing, order dependency, shared state)
 6. Saves full report to `flaky-test-report.json`
+7. Automatically generates `flaky-test-report.html` — a self-contained visual report, open in any browser
 
 **Results on Spring PetClinic:**
 - 70 tests analyzed across 5 runs
