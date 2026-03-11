@@ -70,7 +70,8 @@ se333-demo/spring-petclinic/   ← Target Java project
 │       └── tester.prompt.md   ← Agent instructions
 ├── src/test/java/...          ← AI-generated test files
 ├── coverage-trend.json        ← Coverage history log
-└── flaky-test-report.json     ← Flaky test detection report
+├── flaky-test-report.json     ← Flaky test detection report (machine-readable)
+└── flaky-test-report.html     ← Flaky test detection report (visual, open in browser)
 ```
 
 ---
