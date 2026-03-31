@@ -1,17 +1,12 @@
-# SE333 Final Project — AI Test Coverage Agent
+# AI Test Coverage Agent
 
 An autonomous AI agent that uses **Model Context Protocol (MCP)** to automatically generate, execute, and iterate on JUnit tests to maximize code coverage — and detect flaky tests for test suite reliability.
 
-**Student:** Negina Atai  
-**Course:** SE333 — Software Testing  
-**University:** DePaul University  
-**Submitted:** March 2026
-
 ---
 
-## Project Overview
+## Overview
 
-This project builds an intelligent testing agent powered by GitHub Copilot (GPT) and a custom MCP server. The agent autonomously:
+This project builds an intelligent testing agent powered by **Claude** and a custom MCP server. The agent autonomously:
 
 1. Analyzes a Java Spring Boot project for coverage gaps using JaCoCo
 2. Generates targeted JUnit tests to cover uncovered branches and methods
@@ -33,7 +28,7 @@ This project builds an intelligent testing agent powered by GitHub Copilot (GPT)
 ## Architecture
 
 ```
-GitHub Copilot (VS Code)
+Claude (VS Code)
         ↓  MCP protocol
 FastMCP Server (main.py) — http://127.0.0.1:8000/sse
         ↓  Python
@@ -64,7 +59,7 @@ se333-mcp-server/          ← MCP server (this repo)
 ├── uv.lock
 └── .venv/
 
-se333-demo/spring-petclinic/   ← Target Java project
+spring-petclinic/          ← Target Java project
 ├── .github/
 │   └── prompts/
 │       └── tester.prompt.md   ← Agent instructions
@@ -83,7 +78,7 @@ se333-demo/spring-petclinic/   ← Target Java project
 - Python 3.11+
 - Java 17+
 - Maven 3.9+
-- VS Code with GitHub Copilot extension
+- VS Code with Claude extension
 - `uv` package manager
 
 ### 1. Clone the MCP Server
@@ -144,7 +139,7 @@ The agent will autonomously run, generate tests, and improve coverage.
 
 ## Agent Prompt
 
-The agent is driven by `.github/prompts/tester.prompt.md` which instructs GitHub Copilot to:
+The agent is driven by `.github/prompts/tester.prompt.md` which instructs Claude to:
 
 - Use the MCP tools listed above
 - Iteratively improve coverage until it exceeds 95%
@@ -153,7 +148,7 @@ The agent is driven by `.github/prompts/tester.prompt.md` which instructs GitHub
 
 ---
 
-## Phase 5 — Creative Extension: Flaky Test Detector
+## Flaky Test Detector
 
 The `detect_flaky_tests` MCP tool extends the agent beyond coverage improvement by validating **test suite reliability**.
 
@@ -197,12 +192,14 @@ src/test/java/org/springframework/samples/petclinic/owner/
 
 - **Python** — MCP server implementation
 - **FastMCP** — MCP server framework
+- **Claude** — AI agent
 - **Java / Spring Boot** — Target project under test
 - **JUnit 5** — Test framework
 - **JaCoCo** — Code coverage tool
 - **Maven** — Build and test runner
-- **GitHub Copilot (GPT)** — AI agent
 - **Model Context Protocol (MCP)** — Agent-tool communication protocol
+
+---
 
 ## Troubleshooting
 
@@ -215,7 +212,7 @@ python main.py
 **parse_jacoco fails**
 Run `./mvnw package` first to generate the JaCoCo report before calling the tool.
 
-**GPT ignores MCP tools**
+**Claude ignores MCP tools**
 Make sure the server is running and the tool is listed in the `tools` array in `tester.prompt.md`.
 
 **Maven build fails on formatting**
